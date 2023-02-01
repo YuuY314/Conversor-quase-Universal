@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor quase Universal</title>
+    <link rel="shortcut icon" href="https://www.iconpacks.net/icons/2/free-convert-icon-3216-thumb.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h4>Cotação de 31/01/2023</h4>
+        <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="alura-logo" class="alura-logo">
+        </a>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="page-title">Conversor <span>quase</span> Universal</h1>
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="Imersão Dev">
+        </div>
+        <div class="conversor" id="money-conversor">
+            <div class="to-convert">
+                <div class="categories">
+                    <h2>De:</h2>
+                    <div>
+                        <label for="to-convert-money">Monetário:</label>
+                        <select name="to-convert-money" id="to-convert-money" class="combo-box">
+                            <option value="dolar">Dólar</option>
+                            <option value="euro">Euro</option>
+                            <option value="real">Real</option>
+                            <option value="iene">Iene</option>
+                            <option value="rublo">Rubro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="to-convert-distance">Distância:</label>
+                        <select name="to-convert-distance" id="to-convert-distance" class="combo-box">
+                            <option value="meter">Metro</option>
+                            <option value="kilometer">Quilômetro</option>
+                            <option value="centimeter">Centímetro</option>
+                            <option value="milimeter">Milímetro</option>
+                            <option value="feet">Pé</option>
+                            <option value="yard">Jarda</option>
+                            <option value="inch">Polegada</option>
+                            <option value="mile">Milha</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="to-convert-time">Tempo:</label>
+                        <select name="to-convert-time" id="to-convert-time" class="combo-box">
+                            <option value="second">Segundo</option>
+                            <option value="minute">Minuto</option>
+                            <option value="hour">Hora</option>
+                            <option value="day">Dia</option>
+                            <option value="week">Semana</option>
+                            <option value="month">Mês</option>
+                            <option value="year">Ano</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="conversion">
+                    <div class="selection">
+                        <label for="selected-category"><h2>Categoria</h2></label>
+                        <select name="selected-category" id="selected-category" class="combo-box">
+                            <option value="money">Monetário</option>
+                            <option value="distance">Distância</option>
+                            <option value="time">Tempo</option>
+                        </select>
+                    </div>
+                    <label for="to-convert">Unidade a ser convertida:</label>
+                    <input type="number" name="to-convert" id="to-convert" placeholder="Digite um valor">
+                </div>
+            </div>
+            <div class="converted">
+                <div class="categories">
+                    <h2>Para:</h2>
+                    <div>
+                        <label for="converted-money">Monetário:</label>
+                        <select name="converted-money" id="converted-money" class="combo-box">
+                            <option value="dolar">Dólar</option>
+                            <option value="euro">Euro</option>
+                            <option value="real">Real</option>
+                            <option value="iene">Iene</option>
+                            <option value="rublo">Rubro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="converted-distance">Distância:</label>
+                        <select name="converted-distance" id="converted-distance" class="combo-box">
+                            <option value="meter">Metro</option>
+                            <option value="kilometer">Quilômetro</option>
+                            <option value="centimeter">Centímetro</option>
+                            <option value="milimeter">Milímetro</option>
+                            <option value="feet">Pé</option>
+                            <option value="yard">Jarda</option>
+                            <option value="inch">Polegada</option>
+                            <option value="mile">Milha</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="converted-time">Tempo:</label>
+                        <select name="converted-time" id="converted-time" class="combo-box">
+                            <option value="second">Segundo</option>
+                            <option value="minute">Minuto</option>
+                            <option value="hour">Hora</option>
+                            <option value="day">Dia</option>
+                            <option value="week">Semana</option>
+                            <option value="month">Mês</option>
+                            <option value="year">Ano</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="conversion">
+                    <h2>Unidade convertida</h2>
+                    <input type="text" name="converted" id="converted" value="" placeholder="Valor convertido">
+                </div>
+            </div>
+        </div>
+        <h3>OBS: Algumas conversões de medidas muito extremas podem estar com os valores imprecisos.</h3>
+        <h3>Por enquanto só isso. Depois eu vejo se completo ele.</h3>
+    </main>
+    <footer>Desenvolvido por <a href="https://github.com/YuuY314" target="_blank">Rafael Yu</a></footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto mono", monospace;
+    text-align: center;
+    background-color: #333333;
+    color: #ffffff;
+    height: 100vh;
+}
+
+body > img {
+    margin: 0 10px;
+}
+
+img {
+    max-height: 250px;
+}
+
+header h4 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main h3 {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.container span {
+    font-size: medium;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+.conversor {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #000000;
+    border-radius: 10px;
+}
+
+.conversor > div {
+    width: 100%;
+    padding: 20px;
+}
+
+.to-convert {
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.categories {
+    width: 40%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.categories h2 {
+    text-align: left;
+}
+
+.categories > div {
+    text-align: left;
+    display: flex;
+}
+
+.categories > div label, .categories > div select {
+    width: 45%;
+}
+
+.categories > div select {
+    padding: 5px;
+    width: 50%;
+}
+
+.conversion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+
+.converted .conversion {
+    align-items: center;
+}
+
+.selection {
+    width: 100%;
+}
+
+.selection select {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.converted {
+    background-color: rgb(200, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 5px;
+    outline: none;
+}
+
+.converted input {
+    padding: 10px;
+}
+
+.converted input {
+    pointer-events: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    color: aqua;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: aquamarine;
+}
